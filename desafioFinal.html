@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Final</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    <script src="./desafioFinal.js" defer></script>
+</head>
+<body>
+    <h1>Desafio Final</h1>
+    <h2>Requisitar dados de usuário</h2>
+
+    <form id="consultaForm" class="fields">
+        <label for="userId">Informe um número de 1 a 10:</label>
+        <input type="number" id="userId" min="1" max="10" required>
+        <button type="button" id="consultaButton" onclick="requisitarDados()">Consultar</button>
+    </form>
+    <span id="error"></span>
+
+    <section id="resultado" class="fields">
+        <h2>Dados obtidos</h2>
+        <h4>Nome: <span id="userName"></span></h4>
+        <h4>E-mail: <span id="userEmail"></span></h4>
+        <h4>Rua: <span id="userStreet"></span></h4>
+    </section>
+
+
+</body>
+<footer>
+    <a href="./index.html">Voltar</a>
+</footer>
+</html>
